@@ -63,7 +63,13 @@ const Comeby = () => {
               }}
               className="relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:w-[24rem] h-[33rem] flex flex-col cursor-pointer"
               style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
+                // backgroundImage: `url(${item.backgroundUrl})`,
+                backgroundImage: `url(${index % 3 === 0
+                    ? "/img/card-1.svg"
+                    : index % 3 === 1
+                      ? "/img/card-2.svg"
+                      : "/img/card-3.svg"
+                  })`,
               }}
             >
               <div className="relative z-2 flex flex-col h-full p-6 pointer-events-none">
