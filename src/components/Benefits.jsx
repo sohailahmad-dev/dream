@@ -65,8 +65,15 @@ const Benefits = () => {
                 damping: 20,
               }}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] cursor-pointer"
+
               style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
+                // backgroundImage: `url(${item.backgroundUrl})`,
+                backgroundImage: `url(${index % 3 === 0
+                  ? "/img/card-1.svg"
+                  : index % 3 === 1
+                    ? "/img/card-2.svg"
+                    : "/img/card-3.svg"
+                  })`,
               }}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
