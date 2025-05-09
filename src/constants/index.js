@@ -1,3 +1,4 @@
+import { s } from "framer-motion/client";
 import {
   benefitIcon1,
   benefitIcon2,
@@ -35,6 +36,41 @@ import {
   twitter,
   yourlogo,
 } from "../assets";
+
+
+
+// backgroundUrl: "./src/assets/benefits/card-1.svg",
+// iconUrl: "./src/assets/benefits/jadoon.jpeg",
+
+import card1 from "../assets/benefits/card-1.svg";
+import card2 from "../assets/benefits/card-2.svg";
+import card3 from "../assets/benefits/card-3.svg";
+import card4 from "../assets/benefits/card-4.svg";
+import card5 from "../assets/benefits/card-5.svg";
+import card6 from "../assets/benefits/card-6.svg";
+import AbdulWahab from "../assets/benefits/abdulwahab.jpg";
+import asadM from "../assets/benefits/asadm.jpg";
+import haiderzaidi from "../assets/benefits/haiderzaidi.jpeg";
+import itba from "../assets/benefits/Itba.jpeg";
+import sadiq from "../assets/benefits/sadiq.jpeg";
+import ahmedGDGoC from "../assets/benefits/ahmedGDGoC.jpeg";
+import Mumtaz from "../assets/benefits/Mumtaz.jpg";
+import Anshrah from "../assets/benefits/Anshrah.jpeg";
+import abdullahejaz from "../assets/benefits/AbdullahEjaz.jpg";
+import AhmadA from "../assets/benefits/AhmadA.jpg";
+
+import bilal from "../assets/benefits/bilal.jpeg";
+import AbdullahHabib from "../assets/benefits/abdullahhabib.png";
+import rafay from "../assets/benefits/rafay.jpeg";
+import haiderirfan from "../assets/benefits/HaiderIrfan.jpeg";
+import alishba from "../assets/benefits/alishba.jpeg";
+
+import asifahmad from "../assets/benefits/asifahmad.jpg";
+import jadoon from "../assets/benefits/Jadoon.jpeg";
+import sajidali from "../assets/benefits/sajidali.jpeg";
+// import AbdulWahab from "../assets/benefits/AbdulWahab.jpg";
+
+
 
 export const navigation = [
   {
@@ -443,6 +479,7 @@ export const socials = [
     url: "#",
   },
 ];
+
 export const benefits3 = [
   {
     id: "0",
@@ -451,8 +488,8 @@ export const benefits3 = [
     qualification: "MS in Applied Mathematics",
     coursestaught: "Instructions for  MT 101/MT 102/MT 203",
     text: '"In universities your instructor is also your examiner; so actively take notes and pay close attention to class details. Mathematics is about mastering problem-solving strategies; so practice consistently and don’t procrastinate. Refine your analytical skills daily!"',
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: "./src/assets/benefits/asifahmad.jpg",
+    backgroundUrl: card1,
+    iconUrl: asifahmad,
     link: "https://www.linkedin.com/in/asifehmed/",
   },
   {
@@ -461,8 +498,8 @@ export const benefits3 = [
     faculty: "Assistant Professor @ FCSE",
     coursestaught: "Instructions for CS 101",
     text: '"Many students struggle with building coding logic and often confuse simple syntax errors with complex issues. They rely on memorizing code rather than understanding concepts; skip regular coding practice and fear debugging. A weak grasp of foundational topics further hinders progress therefore it is advisable to build logic with regular hand-on coding practice."',
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: "./src/assets/benefits/jadoon.jpeg",
+    backgroundUrl: card5,
+    iconUrl: jadoon,
     link: "mailto:Khurram.jadoon@giki.edu.pk",
     light: true,
   },
@@ -474,8 +511,8 @@ export const benefits3 = [
     qualification: "MS in Computer Sciences",
     coursestaught: "Instructions for CS 224",
     text: '"Learning is a lifelong journey. Students should not only excel in coursework but also apply their knowledge practically. Automata teaches problem-solving which can be mastered through active participation/ assignments and consistent practice strengthening both conceptual understanding and real-world application."',
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: "./src/assets/benefits/sajidali.jpeg",
+    backgroundUrl: card2,
+    iconUrl: sajidali,
     link: "mailto:sajid.ali@giki.edu.pk",
     light: true,
   },
@@ -486,8 +523,8 @@ export const benefits3 = [
     qualification: "MS in Chemical Engineering",
     coursestaught: "Instructions for CH 161",
     text: '"CH 161 is an introductory chemistry course covering a broad range of topics at a basic level but students often overcomplicate it. To succeed; simply follow the instructor’s guidance and utilize the shared course materials. Lecture notes/slides and reference materials provided via email are generally sufficient for a solid understanding."',
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
-    iconUrl: "./src/assets/benefits/AbdulWahab.jpg",
+    backgroundUrl: card4,
+    iconUrl: AbdulWahab,
     link: "mailto:abdul.wahab@giki.edu.pk",
     light: true,
   },
@@ -499,8 +536,8 @@ export const benefits3 = [
     qualification: "Ph.D (Telecom Paristech, France)",
     coursestaught: "Instructions for ES 205",
     text: '"It is advisable to thoroughly study the textbook as 90% of the assessments are based on the examples and exercise problems while 10% is designed around unique concepts and techniques explored during lectures. This Course is built on deep mathematical reasoning and demands continuous practice. Remember: “Mathematics is not a spectator’s game.”',
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: "./src/assets/benefits/asadM.jpg",
+    backgroundUrl: card3,
+    iconUrl: asadM,
     link: "mailto:asad.mahmood@giki.edu.pk",
     light: true,
   },
@@ -510,8 +547,8 @@ export const benefits3 = [
     faculty: "Lecturer @ Faculty of Engineering Sciences",
     coursestaught: "Instructions for ES 111/DS 221",
     text: '"Feeling nervous about ES111? Don’t worry as it only seems tough at first. Many students try to memorize formulas but this course isn’t about cramming. It’s about building intuition and thinking logically. Why is this course important? It’s one of the 3 pillars behind AI and machine learning. Master the basics here and you’ll find advanced topics much easier later on. Stay curious and focus on understanding—not memorizing!"',
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: "./src/assets/benefits/sadiq.jpeg",
+    backgroundUrl: card6,
+    iconUrl: sadiq,
     link: "https://www.linkedin.com/in/muhammad-sadiq-a9ab88103/",
     light: true,
   },
