@@ -5,6 +5,8 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState, useEffect } from "react";
+import logo from "../assets/Dream_Logo.png"; // Adjust the path as necessar
+
 
 const Header = () => {
   const { hash } = useLocation();
@@ -40,15 +42,14 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
-        openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
+        }`}
     >
       <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         {/* Logo Section - Modified to include both logo and text */}
         <a className="flex items-center w-[12rem] xl:mr-8" href="/">
           <img
-            src="./src/assets/Dream_Logo.png"
+            src={logo}
             width={30}
             height={30}
             alt="DREAM Logo"
@@ -75,9 +76,8 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           <div
-            className={`${
-              openNavigation ? "flex" : "hidden"
-            } lg:hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8`}
+            className={`${openNavigation ? "flex" : "hidden"
+              } lg:hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8`}
           >
             <div className="relative z-2 flex flex-col items-center justify-center m-auto">
               {navigation.map((item) => (
