@@ -405,7 +405,7 @@ export const benefits2 = [
     title: "Muhammad Ahmed",
     text: "xLead @ GDGoC GIK,  DS Major Batch 32 @ GIK",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: muhammadGDGoC,
+    iconUrl: ahmedGDGoC,
     link: "https://www.linkedin.com/in/mhmdahmed5307/",
     light: true,
   },
