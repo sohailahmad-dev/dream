@@ -74,7 +74,13 @@ const Seniorsupport = () => {
               }}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:w-[24rem] h-[26rem] cursor-pointer overflow-hidden rounded-[2rem]"
               style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
+                // backgroundImage: `url(${item.backgroundUrl})`,
+                backgroundImage: `url(${index % 3 === 0
+                  ? "/img/card-1.svg"
+                  : index % 3 === 1
+                    ? "/img/card-2.svg"
+                    : "/img/card-3.svg"
+                  })`,
               }}
             >
               {/* Main glow effect - positioned outside the clipped area */}
@@ -82,9 +88,8 @@ const Seniorsupport = () => {
                 className="absolute -inset-4 z-0 rounded-[2.5rem]"
                 initial={{ boxShadow: "none" }}
                 whileHover={{
-                  boxShadow: `0px 0px 35px 8px ${
-                    glowColors[index % glowColors.length]
-                  }`,
+                  boxShadow: `0px 0px 35px 8px ${glowColors[index % glowColors.length]
+                    }`,
                   transition: { duration: 0.3 },
                 }}
               />
@@ -98,9 +103,8 @@ const Seniorsupport = () => {
                   transition: { duration: 0.3 },
                 }}
                 style={{
-                  background: `radial-gradient(circle at 50% 50%, ${
-                    glowColors[index % glowColors.length]
-                  }, transparent 70%)`,
+                  background: `radial-gradient(circle at 50% 50%, ${glowColors[index % glowColors.length]
+                    }, transparent 70%)`,
                   clipPath: "url(#benefits)",
                 }}
               />
@@ -109,9 +113,8 @@ const Seniorsupport = () => {
               <motion.div
                 className="absolute bottom-0 left-0 right-0 h-10 opacity-0 pointer-events-none z-1"
                 style={{
-                  background: `linear-gradient(to top, ${
-                    glowColors[index % glowColors.length]
-                  }, transparent)`,
+                  background: `linear-gradient(to top, ${glowColors[index % glowColors.length]
+                    }, transparent)`,
                   clipPath: "url(#benefits)",
                 }}
                 initial={{ opacity: 0 }}
